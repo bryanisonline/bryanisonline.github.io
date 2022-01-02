@@ -3,7 +3,7 @@ title = "Teaching"
 description = "teaching"
 slug = "teaching"
 date = 2021-12-22T15:37:48-03:30
-draft = true
+draft = false
 +++
 
 The following are current and past courses delivered by the department of Mathematical

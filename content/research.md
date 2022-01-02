@@ -4,7 +4,7 @@ description = "research"
 slug = "research"
 math = true
 date = 2021-12-22T15:35:50-03:30
-draft = true
+draft = false
 +++
 
 ### Overview

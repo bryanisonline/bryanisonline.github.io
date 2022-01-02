@@ -32,8 +32,6 @@ disqusShortname = "Bryan"
     # Popular sns share
     enableLinkedInShare = false
 
-    thumbnail = "images/tn.png"
-
     # Custom CSS
     custom_css = []
 

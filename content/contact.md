@@ -3,7 +3,7 @@ title = "Contact"
 description = "contact"
 slug = "contact"
 date = 2021-12-22T15:34:37-03:30
-draft = true
+draft = false
 +++
 
 Email: bkettle(at)ualberta.ca

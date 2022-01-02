@@ -3,7 +3,7 @@ title = "About Me"
 description = "about"
 slug = "about"
 date = 2021-12-22T15:19:38-03:30
-draft = true
+draft = false
 +++
 
 Welome, my name is Bryan.
