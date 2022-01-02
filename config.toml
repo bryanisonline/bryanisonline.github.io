@@ -1,0 +1,77 @@
+baseURL = 'http://example.org/'
+languageCode = 'en'
+title = 'Bryan W Kettle'
+theme = "coder-portfolio"
+
+DefaultContentLanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "Bryan"
+
+[params]
+    author = "Bryan W Kettle"
+    description = "Bryan Kettle's personal website"
+    keywords = "math, phd, bryan, kettle, bryan kettle, bryan kettle math, bryan kettle phd, bryan kettle ualberta, ualberta"
+    info = "PHD Candidate in Mathematics"
+    avatarurl = "images/Bryan.jpeg"
+    footercontent = "."
+    fixedbarContent = "."
+    fixedbarContentAfter = "."
+
+    hideCredits = false
+    hideCopyright = false
+
+    # Bottom sns share
+    snsShare = true
+    # Popular sns share
+    enableLinkedInShare = false
+
+    thumbnail = "images/tn.png"
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/bryanisonline/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/b-ket/"
+
+
+[[menu.main]]
+    name = "About"
+    weight = 1
+    url = "about"
+
+[[menu.main]]
+    name = "Research"
+    weight = 2
+    url = "research"
+
+[[menu.main]]
+    name = "Teaching"
+    weight = 3
+    url = "teaching"
+
+[[menu.main]]
+    name = "Contact"
+    weight = 4
+    url = "contact"

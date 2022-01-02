@@ -1,0 +1,27 @@
+<section class="container list">
+  <h1 class="title">{{ .Title }}</h1>
+  <hr />
+{{ .Content }}
+
+<h3>Current Courses</h3>
+
+  <ul>
+    {{ range where .Site.Pages "Params.series" "current_course" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
+<h3>Previous Courses</h3>
+
+  <ul>
+    {{ range where .Site.Pages "Params.series" "previous_course" }}
+    <li>
+      <strong>{{ .Title }}</strong>
+    </li>
+    {{ end }}
+  </ul>  
+
+</section>
+ 
