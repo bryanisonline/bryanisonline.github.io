@@ -3,7 +3,7 @@ title = "Winter 2022: Math 102 (Applied Linear Algebra)"
 description = "Winter 2022: Math 102 (Applied Linear Algebra)"
 slug = "winter2022_math102"
 date = 2021-12-23T12:40:50-03:30
-draft = true
+draft = false
 series = "current_course"
 +++
 
