@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 [params]
     author = "Bryan W Kettle"
     description = "Bryan Kettle's personal website"
-    keywords = "math, phd, bryan, kettle, ualberta"
+    keywords = "math, phd, bryan, kettle, ualberta, uofa"
     info = "PHD Candidate in Mathematics"
     avatarurl = "images/Bryan.jpeg"
     footercontent = "."
