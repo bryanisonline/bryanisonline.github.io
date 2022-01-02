@@ -12,8 +12,6 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsUseClasses = true
 
-disqusShortname = "Bryan"
-
 [params]
     author = "Bryan W Kettle"
     description = "Bryan Kettle's personal website"
