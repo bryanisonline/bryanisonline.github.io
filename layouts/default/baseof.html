@@ -38,6 +38,7 @@
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}    
 
+    {{ if eq .Params.math true }}
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
           MathJax.Hub.Config({
@@ -60,6 +61,7 @@
             }
           });
           </script>
+      {{ end }}
 
     <link rel="icon" type="image/png" href="{{ "images/crop_frame_icon-32x32.png" | relURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "images/crop_frame_icon-16x16.png" | relURL }}" sizes="16x16">
