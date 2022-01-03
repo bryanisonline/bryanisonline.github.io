@@ -6,9 +6,9 @@ date = 2021-12-22T15:19:38-03:30
 draft = false
 +++
 
-Welome, my name is Bryan.
+Welcome, my name is Bryan.
 
-I am a PhD candidate in mathematics at the University of Alberta, whose research lies in the expansive area of quantum algebra and representation theory. The essential idea of my research is to utilize the power of linear algebra to understand and solve more complicated algebraic problems. My mathematical interests also extend to machine learning and cryptography. 
+I am a PhD candidate in mathematics at the University of Alberta, whose research lies in the expansive area of quantum algebra and representation theory. The essential idea of my research is to utilize the tools of linear algebra to understand and solve more complicated algebraic problems. My mathematical interests also extend to machine learning and cryptography.
 
 {{% portfolio image="/images/skiing.jpg" alt="Skiing" %}}
 

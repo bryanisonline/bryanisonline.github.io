@@ -7,6 +7,6 @@ draft = false
 +++
 
 The following are current and past courses delivered by the department of Mathematical
-and Statistical Sciences at the University of Alberta for which I am (and was) employed
-as a laboratory instructor. Follow the provided links for additional information and course
+and Statistical Sciences at the University of Alberta at which I am employed
+as a laboratory instructor. Follow the current course link for additional information and course
 materials.
