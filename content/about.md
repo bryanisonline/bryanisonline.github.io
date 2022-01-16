@@ -8,8 +8,8 @@ draft = false
 
 Welcome, my name is Bryan.
 
-I am a PhD candidate in mathematics at the University of Alberta, whose research lies in the expansive area of quantum algebra and representation theory. The essential idea of my research is to utilize the tools of linear algebra to understand and solve more complicated algebraic problems. My mathematical interests also extend to machine learning and cryptography.
+I am a PhD candidate in mathematics at the University of Alberta, whose research lies in the expansive area of quantum algebra and representation theory. The essential idea of my research is to utilize the tools of linear algebra to understand and solve more complicated algebraic problems. My mathematical interests also extend to the areas of machine learning and cryptography.
 
 {{% portfolio image="/images/skiing.jpg" alt="Skiing" %}}
 
-Apart from spending extensive time solving mathematical problems, I have a wide array of hobbies and interests, such as coding, biking, skiing, creating/playing music, and attempting to obtain a top 30k finish in [fantasy premier league](https://fantasy.premierleague.com/entry/274160/history).
+Apart from spending extensive time solving mathematical problems, I have a wide array of hobbies and interests, such as coding, biking, skiing, creating/playing music, and supporting the Canadian men's national soccer team.
