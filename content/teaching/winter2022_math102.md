@@ -23,4 +23,4 @@ series = "current_course"
 
 ### Lab Notes
 
-(To be updated)
++ [Math 102 Lab 1 Notes](/local_files/Math_102_Lab_1_Notes.pdf)
