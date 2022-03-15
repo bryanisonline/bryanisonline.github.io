@@ -38,6 +38,8 @@
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}    
 
+    {{ partial "seo_schema" . }}
+
     {{ if eq .Params.math true }}
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">

@@ -7,6 +7,9 @@ DefaultContentLanguage = "en"
 
 paginate = 20
 
+enableRobotsTXT = true
+canonifyURLs = true
+
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
@@ -15,7 +18,7 @@ pygmentsUseClasses = true
 [params]
     author = "Bryan W Kettle"
     description = "Bryan Kettle's personal website"
-    keywords = "math, phd, bryan, kettle, ualberta, uofa"
+    keywords = "bryan, kettle, math, phd, ualberta, uofa"
     info = "PHD Candidate in Mathematics"
     avatarurl = "images/Bryan.jpeg"
     footercontent = "."
