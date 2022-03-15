@@ -38,3 +38,4 @@ series = "current_course"
 + [Math 102 Lab 7 Notes](/local_files/Math_102_Lab_7_Notes.pdf)
 
 + [Math 102 Lab 8 Notes](/local_files/Math_102_Lab_8_Notes.pdf) **/** [Math 102 Lab 8 Hints](/local_files/Math102Lab8Hints.pdf)
+
