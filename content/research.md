@@ -39,7 +39,11 @@ $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_
   + August 2015 | Bonne Bay Marine Station of Memorial University of Newfoundland
 
 ## Presentations
+
 ---
+
++ **Super Yangians: Where We Are Today**
+  + May 2022 | University of Saskatchewan
 
 + **Yangians and the Quantum Yang-Baxter Equation**
   + November 2021 | Banff Centre
