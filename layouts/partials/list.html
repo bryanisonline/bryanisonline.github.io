@@ -3,16 +3,6 @@
   <hr />
 {{ .Content }}
 
-<h3>Current Courses</h3>
-
-  <ul>
-    {{ range where .Site.Pages "Params.series" "current_course" }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
-
 <h3>Previous Courses</h3>
 
   <ul>
@@ -22,6 +12,16 @@
     </li>
     {{ end }}
   </ul>  
+
+  <h3>Lab Material</h3>
+
+  <ul>
+    {{ range where .Site.Pages "Params.series" "course_material" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
 
 </section>
  
