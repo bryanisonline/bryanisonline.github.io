@@ -24,6 +24,7 @@ Yangians are examples of affine quantum groups, meaning that they are (noncommut
 $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_{13}(u_{1},u_{3})R_{12}(u_{1},u_{2})$ -->
 
 ## Conferences Attended
+
 ---
 
 + **Quantum Field Theories and Quantum Topology Beyond Semisimplicity**
