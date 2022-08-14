@@ -67,8 +67,7 @@ $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_
 
 + **Yetter-Drinfel'd Modules and the Radford Projection Theorem**
   + April 2017 | Bachelor Thesis Public Presentation | Memorial University of Newfoundland
-  + **Abstract:** In the theory of groups, the semidirect product is an approach to decompose a group into a product of two subgroups with one being normal. We shall examine a Hopf algebra analogue of the semidirect product, called the Radford biproduct. 
-
+  + **Abstract:** In the theory of groups, the semidirect product is an approach to decompose a group into a product of two subgroups with one being normal. We shall examine a Hopf algebra analogue of the semidirect product, called the Radford biproduct.
 
 + **Olshansky's Modification of Golod's Example of Non-Nilpotent Finitely Generated Nil-Algebras**
   + October 2016 | Algebra Seminar | Memorial University of Newfoundland
