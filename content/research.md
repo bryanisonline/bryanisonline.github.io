@@ -27,6 +27,9 @@ $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_
 
 ---
 
++ **Workshop on Symmetric Spaces, Their Generalizations, and Special Functions**
+  + August 2022 | University of Ottawa
+
 + **Quantum Field Theories and Quantum Topology Beyond Semisimplicity**
   + November 2021 | Banff International Research Station
 
