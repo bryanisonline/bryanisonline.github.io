@@ -12,4 +12,4 @@ I am a PhD candidate in mathematics at the University of Alberta, whose research
 
 {{% portfolio image="/images/skiing.jpg" alt="Skiing" %}}
 
-Apart from spending extensive time solving mathematical problems, I have a wide array of hobbies and interests, such as programming, biking, skiing, creating/playing music, and being an avid supporter of the Canadian national soccer teams.
+Apart from spending extensive time solving mathematical problems, I have a wide array of hobbies and interests, such as traveling, cycling, skiing, creating/playing music, and being an avid supporter of the Canadian national soccer teams.
