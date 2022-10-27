@@ -6,4 +6,4 @@ date = 2021-12-22T15:37:48-03:30
 draft = false
 +++
 
-The following are previous courses delivered by the Department of Mathematical and Statistical Sciences at the University of Alberta, where I worked as a laboratory instructor during the following indicated semesters of my PhD. Selected lab materials are also available below.
+The following are laboratories I either currently teach or previously taught at the Department of Mathematical and Statistical Sciences within the University of Alberta. Here, I post relevant laboratory materials and notes. Following the conclusion of each semester, links are deactivated; however, some selected lab materials remain accessible in the last section below.

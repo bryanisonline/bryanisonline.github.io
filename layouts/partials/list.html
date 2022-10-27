@@ -3,17 +3,21 @@
   <hr />
 {{ .Content }}
 
-<h3>Previous Courses</h3>
+<h3>Current Labs</h3>
+
+<h5>N/A</h5> 
+
+<h3>Previous Labs</h3>
 
   <ul>
     {{ range where .Site.Pages "Params.series" "previous_course" }}
     <li>
-      <strong>{{ .Title }}</strong>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>  
 
-  <h3>Lab Materials</h3>
+  <h3>Selected Lab Materials</h3>
 
   <ul>
     {{ range where .Site.Pages "Params.series" "course_material" }}
