@@ -53,12 +53,12 @@ $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_
 + **A Friendly Introduction to Representation Theory**
   + October 2021 | Mathematical and Statistical Sciences Graduate Colloquium | University of Alberta
   + **Abstract:** Representation theory is a branch of mathematics that studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. When that abstract algebraic object is being represented on a finite-dimensional vector space, its elements are described by matrices and its algebraic operations are described by matrix multiplication and matrix addition. The power of such methodology allows one to reduce abstract algebra problems to linear algebra problems. In this talk, we will introduce the basic notions of representation theory with a focus on group representations.
-  + [Slides](/local_files/RepTheoryPresentation.pdf)
+  + [Slides](/rep_theory_slides.pdf)
 
 + **A Friendly Introduction to Representation Theory**
   + February 2021 | Mathematical and Statistical Sciences Graduate Colloquium (Virtual) | University of Alberta
   + **Abstract:** Representation theory is a branch of mathematics that studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. When that abstract algebraic object is being represented on a finite-dimensional vector space, its elements are described by matrices and its algebraic operations are described by matrix multiplication and matrix addition. The power of such methodology allows one to reduce abstract algebra problems to linear algebra problems. In this talk, we will introduce the basic notions of representation theory with a focus on group representations.
-  + [Slides](/local_files/RepTheoryPresentation.pdf)
+  + [Slides](/rep_theory_slides.pdf)
 
 + **Dualizing Algebras**
   + January 2020 | Graduate Algebra Seminar | University of Alberta

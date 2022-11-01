@@ -78,4 +78,4 @@ pygmentsUseClasses = true
 [[menu.main]]
     name = "CV"
     weight = 4
-    url = "/local_files/cv.pdf"
+    url = "/cv.pdf"
