@@ -8,7 +8,7 @@ draft = false
 
 Welcome, my name is Bryan.
 
-I am a PhD candidate in mathematics at the University of Alberta under the supervision of [Professor Nicolas Guay](https://sites.ualberta.ca/~nguay/index.html). Currently, my research lies within the expansive area of quantum algebra and representation theory. The essential idea of my work is to utilize the tools of linear algebra to understand and solve complicated algebraic problems. My mathematical interests also extend to machine learning, AI, cryptography, and quantum computing.
+I am a PhD candidate in mathematics at the University of Alberta under the supervision of [Professor Nicolas Guay](https://apps.ualberta.ca/directory/person/nguay). Currently, my research lies within the expansive area of quantum algebra and representation theory. The essential idea of my work is to utilize the tools of linear algebra to understand and solve complicated algebraic problems. My mathematical interests also extend to machine learning, AI, cryptography, and quantum computing.
 
 {{% portfolio image="/images/skiing.jpg" alt="Skiing" %}}
 
