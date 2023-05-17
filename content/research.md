@@ -13,34 +13,7 @@ draft = false
 
 The theory of representations is often applied to the domain of [quantum algebra](https://en.wikipedia.org/wiki/Quantum_algebra): the area of mathematics that in some way relates to the fact that noncommutativity is found in quantum mechanics. An important instance of noncommutative objects are known as [quantum groups](https://en.wikipedia.org/wiki/Quantum_group), whose representation theories are known to have particular importance in quantum physics. One such family of quantum groups are called [Yangians](https://en.wikipedia.org/wiki/Yangian), which come equipped with the foundational fact that their representations produce rational solutions to the [quantum Yang-Baxter equation](https://en.wikipedia.org/wiki/Yang–Baxter_equation). The structure and representation theory of Yangians has become a study in and of itself, with such research expanding to *super* Yangians: a formulation of Yangians in terms of the mathematics of [supersymmetry](https://en.wikipedia.org/wiki/Supersymmetry). However, the theory of super Yangians is comparatively less developed to its non-super counterpart, which is the cause of my PhD research.
 
-<!-- ### In Detail
-
-Given any finite-dimensional complex simple Lie algebra $\mathfrak{g}$, the Yangian $Y_{\hbar}(\mathfrak{g})$ is a unital associative $\mathbb{C}$-algebra depending on some ancillary parameter $\hbar$, which when specializing $\hbar$ to a certain complex number, becomes the universal enveloping algebra $\mathfrak{U}(\mathfrak{g}[z])$ of the polynomial current algebra $\mathfrak{g}[z]$. In short, the Yangian $Y_{\hbar}(\mathfrak{g})$ is a (Hopf) algebra deformation, or more accurately a homogeneous quantization, of $\mathfrak{U}(\mathfrak{g}[z])$.
-
-Yangians are examples of affine quantum groups, meaning that they are (noncommutative and noncocommutative) pseudo-quasitriangular Hopf algebras. They were first formally introduced by V. Drinfel'd who named such in honour of the physicist C. N. Yang. However, these algebraic structures arose earlier in terms of their representations in mathematical physics within the context of [integrable quantum field theory](https://en.wikipedia.org/wiki/Quantum_inverse_scattering_method).
-
-$R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_{13}(u_{1},u_{3})R_{12}(u_{1},u_{2})$ -->
-
-## Conferences Attended
-
----
-
-+ **Workshop on Symmetric Spaces, Their Generalizations, and Special Functions**
-  + August 2022 | University of Ottawa
-
-+ **Quantum Field Theories and Quantum Topology Beyond Semisimplicity**
-  + November 2021 | Banff International Research Station
-
-+ **QRST: Quantum Groups, Representation Theory, Superalgebras, and Tensor Categories** (Virtual)
-  + August 2020 | University of Ottawa
-
-+ **Hopf Algebras, Algebraic Groups, and Related Structures**
-  + June 2016 | Memorial University of Newfoundland
-
-+ **Algebraic Groups and Lie Algebras**
-  + August 2015 | Bonne Bay Marine Station of Memorial University of Newfoundland
-
-## Presentations
+## Selected Presentations
 
 ---
 
@@ -56,7 +29,6 @@ $R_{12}(u_{1},u_{2})R_{13}(u_{1},u_{3})R_{23}(u_{2},u_{3})=R_{23}(u_{2},u_{3})R_
 + **A Friendly Introduction to Representation Theory**
   + February 2021 | Mathematical and Statistical Sciences Graduate Colloquium (Virtual) | University of Alberta
   + **Abstract:** Representation theory is a branch of mathematics that studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. When that abstract algebraic object is being represented on a finite-dimensional vector space, its elements are described by matrices and its algebraic operations are described by matrix multiplication and matrix addition. The power of such methodology allows one to reduce abstract algebra problems to linear algebra problems. In this talk, we will introduce the basic notions of representation theory with a focus on group representations.
-  + [Slides](/rep_theory_slides.pdf)
 
 + **Dualizing Algebras**
   + January 2020 | Graduate Algebra Seminar | University of Alberta
