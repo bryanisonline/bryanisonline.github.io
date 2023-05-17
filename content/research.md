@@ -24,7 +24,7 @@ The theory of representations is often applied to the domain of [quantum algebra
 + **A Friendly Introduction to Representation Theory**
   + October 2021 | Mathematical and Statistical Sciences Graduate Colloquium | University of Alberta
   + **Abstract:** Representation theory is a branch of mathematics that studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. When that abstract algebraic object is being represented on a finite-dimensional vector space, its elements are described by matrices and its algebraic operations are described by matrix multiplication and matrix addition. The power of such methodology allows one to reduce abstract algebra problems to linear algebra problems. In this talk, we will introduce the basic notions of representation theory with a focus on group representations.
-  + [Slides](/rep_theory_slides.pdf)
+  + [Slides](/RepTheoryPresentation.pdf)
 
 + **A Friendly Introduction to Representation Theory**
   + February 2021 | Mathematical and Statistical Sciences Graduate Colloquium (Virtual) | University of Alberta
