@@ -18,7 +18,7 @@ sections:
       text: |-
        Academically, I am an algebraist primarily focused on studying certain kinds of Hopf algebras known as *quantum groups*. The value of these types of objects are often realized in terms of their representations, where they yield non-trivial solutions to important consistency equations found in quantum physics and statistical mechanics.
        
-       The family of quantum groups I mainly study are Yangians, usually denoted {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} for a suitable Lie algebra or Lie superalgebra {{< math >}}$\mathfrak{g}${{< /math >}}. At least when {{< math >}}$\mathfrak{g}${{< /math >}} is a finite-dimensional complex Lie algebra, it is known that the finite-dimensional irreducible representations of {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} yield rational solutions to the Yang-Baxter equation:
+       The family of quantum groups I mainly study are Yangians, usually denoted {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} for a suitable Lie algebra or Lie superalgebra {{< math >}}$\mathfrak{g}${{< /math >}}. At least when {{< math >}}$\mathfrak{g}${{< /math >}} is a finite-dimensional complex simple Lie algebra, it is known that the finite-dimensional irreducible representations of {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} yield rational solutions to the Yang-Baxter equation:
 
        {{< math >}}
        $$R_{12}(u) R_{13}(u+v) R_{23}(v) = R_{23}(v) R_{13}(u+v) R_{12}(u).$$
