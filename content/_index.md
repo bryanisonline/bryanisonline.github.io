@@ -24,7 +24,7 @@ sections:
        $$R_{12}(u) R_{13}(u+v) R_{23}(v) = R_{23}(v) R_{13}(u+v) R_{12}(u).$$
        {{< /math >}}
 
-       My PhD research predominantly focuses on understanding Yangians based on particular Lie superalgebras.
+       My PhD dissertation is titled *Orthosymplectic, Periplectic, and Twisted Super Yangians*, wherein several Yangian constructions are examined based on certain Lie superalgebras.
 
     design:
       columns: '2'
@@ -57,7 +57,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Recent Talks
       filters:
         folders:
           - event
