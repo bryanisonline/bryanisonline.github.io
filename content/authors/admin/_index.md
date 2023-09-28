@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Graduand in Mathematics
+role: PhD in Mathematics
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -37,7 +37,7 @@ education:
   courses:
     - course: PhD in Mathematics
       institution: University of Alberta
-      year: 2023 (to be conferred)
+      year: 2023
     - course: MSc in Mathematics
       institution: University of Western Ontario
       year: 2018
@@ -78,7 +78,7 @@ email: 'bkettle@ualberta.ca'
 highlight_name: true
 ---
 
-Bryan Kettle is a PhD Graduand in mathematics at the University of Alberta under the supervision of [Dr. Nicolas Guay](https://sites.ualberta.ca/~nguay/index.html). Bryan's academic research predominantly lies within quantum group theory focusing on the study of Yangians and their representation theory.
+Bryan Kettle has a PhD in mathematics from the University of Alberta under the supervision of [Dr. Nicolas Guay](https://sites.ualberta.ca/~nguay/index.html). Bryan's academic research predominantly lies within quantum group theory focusing on the study of Yangians and their representation theory.
 
 Over the duration of his PhD program, he was employed as a laboratory instructor for several courses in calculus and linear algebra. He has also given many presentations and talks covering topics from introductory to specialized subjects in mathematics.
 {style="text-align: justify;"}
