@@ -24,7 +24,7 @@ sections:
        $$R_{12}(u) R_{13}(u+v) R_{23}(v) = R_{23}(v) R_{13}(u+v) R_{12}(u).$$
        {{< /math >}}
 
-       My PhD dissertation is titled *Orthosymplectic, Periplectic, and Twisted Super Yangians*, wherein several Yangian constructions are examined based on certain Lie superalgebras.
+       In September of 2023, I successfully defended my PhD dissertation, titled *Orthosymplectic, Periplectic, and Twisted Super Yangians*, wherein several algebraic and representation theoretic results are proven about Yangians based on certain Lie superalgebras. One can access my PhD dissertation via the link available below.
 
     design:
       columns: '2'
@@ -40,20 +40,17 @@ sections:
 #    design:
 #      columns: '2'
 #      view: card
-#  - block: collection
-#    content:
-#      title: Recent Publications
-#      text: |-
-#        {{% callout note %}}
-#        Quickly discover relevant content by [filtering publications](./publication/).
-#        {{% /callout %}}
-#      filters:
-#        folders:
-#          - publication
-#        exclude_featured: true
-#    design:
-#      columns: '2'
-#      view: citation
+  - block: collection
+    id: dissertation
+    content:
+      title: PhD Dissertation
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      columns: '2'
+      view: card
   - block: collection
     id: talks
     content:
@@ -63,7 +60,7 @@ sections:
           - event
     design:
       columns: '2'
-      view: compact
+      view: card
 #  - block: markdown
 #    content:
 #      title: Gallery

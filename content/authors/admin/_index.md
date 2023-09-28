@@ -80,5 +80,5 @@ highlight_name: true
 
 Bryan Kettle is a PhD Graduand in mathematics at the University of Alberta under the supervision of [Dr. Nicolas Guay](https://sites.ualberta.ca/~nguay/index.html). Bryan's academic research predominantly lies within quantum group theory focusing on the study of Yangians and their representation theory.
 
-During his PhD program, he was employed as a laboratory instructor for several courses in calculus and linear algebra. He has also given many presentations and talks covering topics from introductory to specialized subjects in mathematics.
+Over the duration of his PhD program, he was employed as a laboratory instructor for several courses in calculus and linear algebra. He has also given many presentations and talks covering topics from introductory to specialized subjects in mathematics.
 {style="text-align: justify;"}
