@@ -27,7 +27,7 @@ organizations:
 # Interests to show in About widget
 interests:
   - Algebra
-#  - Artificial Intelligence
+  - Data Science
   - Mathematical Physics
   - Representation Theory
 #  - Quantum Computing
