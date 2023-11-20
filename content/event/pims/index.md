@@ -10,7 +10,7 @@ address:
   region: Saskatchewan, Canada
   country: Canada
 
-summary: A talk surverying the current state of research on super Yangians as well as recent advancements.
+summary: A talk surveying the current state of research on super Yangians as well as recent advancements.
 
 abstract: Given any finite-dimensional simple Lie algebra a over {{< math >}}$\mathbb{C}${{< /math >}}, the Yangian {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} is a certain unital associative {{< math >}}$\mathbb{C}${{< /math >}}-algebra. In particular, Yangians form a family of so-called quantum groups. The main property these algebras is the foundational fact that their representations produce rational solutions to the quantum Yang-Baxter equation. The structure and representation theory of Yangians has become a study in and of itself and has expanded to the study of super Yangians based on Lie superalgebras; however, the theory of super Yangians is comparatively less developed than its non-super counterpart. In this talk, we will survey what recent advancements have been made in the study of super Yangians and view what else remains to do.
 
