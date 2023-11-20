@@ -6,10 +6,10 @@ authors:
 #- "Equal contribution"
 #- "Equal contribution"
 date: "2023-09-25T00:00:00Z"
-doi: ""
+doi: "10.7939/r3-yr6s-nj64"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2023-09-25T00:00:00Z"
+publishDate: 2023-11-15T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -31,8 +31,8 @@ tags:
 featured: true
 
 # links:
-# - name: ""
-#   url: ""
+name: "Orthosymplectic, Periplectic, and Twisted Super Yangians"
+#url: "https://doi.org/10.7939/r3-yr6s-nj64"
 url_pdf: 'uploads/BKettle_PhD_Dissertation.pdf'
 url_code: ''
 url_dataset: ''
