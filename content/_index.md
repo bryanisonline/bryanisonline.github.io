@@ -11,24 +11,6 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-#  - block: markdown
-#    id: research
-#    content:
-#      title: Research Overview
-#      text: |-
-#       Academically, I am an algebraist primarily focused on studying certain kinds of Hopf algebras known as *quantum groups*. The value of these types of objects are often realized in terms of their representations, where they yield non-trivial solutions to important consistency equations found in quantum physics and statistical mechanics.
-#       
-#       The family of quantum groups I primarily study are Yangians, usually denoted {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} for a suitable Lie algebra or Lie superalgebra {{< math >}}$\mathfrak{g}${{< /math >}}. At least when {{< math >}}$\mathfrak{g}${{< /math >}} is a finite-dimensional complex simple Lie algebra, it is known that the finite-dimensional irreducible representations of {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} yield rational solutions to the Yang-Baxter equation:
-#
-#       {{< math >}}
-#       $$R_{12}(u) R_{13}(u+v) R_{23}(v) = R_{23}(v) R_{13}(u+v) R_{12}(u).$$
-#       {{< /math >}}
-#
-#       In September of 2023, I successfully defended my PhD dissertation, titled *Orthosymplectic, Periplectic, and Twisted Super Yangians*, wherein several algebraic and representation theoretic results are proven about Yangians based on certain Lie superalgebras. One can access my PhD dissertation via the link available below.
-
-#    design:
-#      columns: '2'
-
 #  - block: collection
 #    id: featured
 #    content:
@@ -67,10 +49,10 @@ sections:
       view: card
 #  - block: markdown
 #    content:
-#      title: Gallery
+#      title: Photos
 #      subtitle: ''
 #      text: |-
-#        {{< gallery album="demo" >}}
+#        {{< gallery album="demo1" >}}
 #    design:
 #      columns: '1'
 #  - block: tag_cloud
