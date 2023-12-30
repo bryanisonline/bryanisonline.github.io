@@ -18,7 +18,7 @@ publishDate: 2023-11-15T00:00:00Z"
 publication_types: ["7"]
 
 # Publication name and optional abbreviated publication name.
-#publication: "*Journal of Source Themes, 1*(1)"
+publication: "University of Alberta"
 #publication_short: ""
 
 abstract: This dissertation establishes various structural and representation theoretic results in super Yangian theory. <br/><br/> In its first part, this dissertation details the algebraic structure and representation theory for the Yangians of orthosymplectic Lie superalgebras. Addressing these Yangians via the {{< math >}}$RTT${{< /math >}} realization, we prove a Poincaré-Birkhoff-Witt-type theorem and provide a thorough study of the algebraic structure of their extended Yangians. The main result of this part, and of this dissertation, is the provision of many necessary conditions for the irreducible representations of these orthosymplectic Yangians to be finite-dimensional; furthermore, there is much progress made to address attaining sufficient conditions as well. These representation theoretic results are accomplished via the development of a highest weight theory, and such necessary conditions are given in terms of highest weights and tuples of Drinfel'd polynomials. <br/><br/> The second part of this dissertation is devoted to the Yangians of periplectic Lie superalgebras and the twisted Yangians associated to symmetric superpairs of type {{< math >}}$\operatorname{AIII}${{< /math >}}.<br/><br/> Via the $RTT$ formalism, we prove many structural results for the Yangians of type {{< math >}}$P${{< /math >}} strange Lie superalgebras that have only so far been established for the Yangians of type {{< math >}}$Q${{< /math >}} strange Lie superalgebras, including a proof of a Poincaré-Birkhoff-Witt-type theorem. The twisted super Yangians of type {{< math >}}$\operatorname{AIII}${{< /math >}} are defined along with many structural properties established. We lay the foundation for the classification of their finite-dimensional irreducible representations by cultivating a highest weight theory and proving that all finite-dimensional irreducible modules must be highest weight.
@@ -44,10 +44,10 @@ url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
+#image:
 #  caption:
-  focal_point: ""
-  preview_only: true
+#  focal_point: ""
+#  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
