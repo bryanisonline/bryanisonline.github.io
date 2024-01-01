@@ -47,14 +47,14 @@ sections:
     design:
       columns: '2'
       view: card
-#  - block: markdown
-#    content:
-#      title: Photos
-#      subtitle: ''
-#      text: |-
-#        {{< gallery album="demo1" >}}
-#    design:
-#      columns: '1'
+  - block: markdown
+    content:
+      title: Some Pictures
+      subtitle: ''
+      text: |-
+        {{< gallery album="photos" >}}
+    design:
+      columns: '1'
 #  - block: tag_cloud
 #    content:
 #      title: Popular Topics
