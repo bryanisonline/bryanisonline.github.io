@@ -1,3 +1,15 @@
 assets/.DS_Store
 assets/media/.DS_Store
 assets/media/albums/.DS_Store
+assets/media/albums/photos/.DS_Store
+assets/media/icons/brands/.DS_Store
+resources/_gen/images/authors/admin/.DS_Store
+resources/_gen/images/event/.DS_Store
+resources/_gen/images/media/.DS_Store
+resources/_gen/images/media/albums/.DS_Store
+resources/_gen/images/post/.DS_Store
+resources/_gen/images/project/.DS_Store
+resources/_gen/images/publication/conference-paper/.DS_Store
+resources/_gen/images/publication/dissertation/.DS_Store
+resources/_gen/images/publication/journal-article/.DS_Store
+resources/_gen/images/publication/preprint/.DS_Store
