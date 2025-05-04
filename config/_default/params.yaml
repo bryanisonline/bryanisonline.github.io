@@ -13,6 +13,8 @@ appearance:
 
 # SEO
 
+googleAnalytics: ""
+
 marketing:
   seo:
     site_type: Person
