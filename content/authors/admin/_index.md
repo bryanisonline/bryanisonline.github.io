@@ -75,28 +75,34 @@ education:
       text: 'Read Thesis'
       url: ''
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Data Analyst
+    company_name: Vretta Inc.
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2023-12-15
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Design, build, and maintain automated ETL/ELT pipelines with CI/CD integration using Python, R, SQL, AWS, and Git workflows to deploy and operationalize machine learning models.
+  - position: Researcher
+    company_name: University of Alberta
+    company_url: 'https://www.ualberta.ca/en/index.html'
+    company_logo: ''
+    date_start: 2018-09-01
+    date_end: 2023-11-30
+    summary: |
+      - Established various structural and representation theoretic results about super Yangians - a family of quantum groups related to the super-symmetric Yang-Baxter equation in quantum mechanics.
+      - Delivered public presentations and invited talks, covering topics ranging from introductory to specialized subjects in mathematics, including the results of my PhD research.
+  - position: Graduate Teaching Assistant
+    company_name: University of Alberta
+    company_url: 'https://www.ualberta.ca/en/index.html'
+    company_logo: ''
+    date_start: 2018-09-01
+    date_end: 2023-04-30
+    summary: |
+      - Laboratory instructor for the following courses:
+        - Math 100 Calculus I; Math 101 Calculus II; Math 209 Calculus III; Math 102 Applied Linear Algebra
+      - Tutor at the Mathematics (Decima Robinson) Support Centre.
+      - Primary assignment grader for the following courses:
+        - Math 125 Linear Algebra I; Math 260 Mathematical Reasoning for Teachers; Math 322 Graph Theory; Math 324 Elementary Number Theory; Math 325 Linear Algebra III; Math 326 Rings and Modules 
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
