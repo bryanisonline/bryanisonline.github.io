@@ -31,15 +31,15 @@ sections:
           position: center
           parallax: false
   - block: markdown
+    id: research
     content:
-      title: '📚 My Research'
+      title: 'Academic Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        My academic research primarily focused on studying certain kinds of Hopf algebras known as *quantum groups*. The value of these types of objects are often realized in terms of their representations, where they can yield non-trivial solutions to the Yang-Baxter equation - an important consistency equation for quantum integrable systems in statistical mechanics.
+       
+        The family of quantum groups I mainly studied are known as *Yangians*, usually denoted {{< math >}}$\operatorname{Y}(\mathfrak{g})${{< /math >}} for a suitable Lie algebra or Lie superalgebra {{< math >}}$\mathfrak{g}${{< /math >}}. In September of 2023, I successfully defended my PhD dissertation, titled *Orthosymplectic, Periplectic, and Twisted Super Yangians*, wherein several algebraic and representation theoretic results are proven about Yangians based on certain Lie superalgebras.
+      
     design:
       columns: '1'
   - block: collection
