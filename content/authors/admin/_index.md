@@ -46,37 +46,34 @@ interests:
   - Representation Theory
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Mathematics
+    institution: University of Alberta
+    date_start: 2018-09-01
+    date_end: 2023-11-30
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      - Dissertation: *Orthosymplectic, Periplectic, and Twisted Super Yangians*
+        - Completed under the supervision of [Dr. Nicolas Guay](https://sites.ualberta.ca/~nguay/index.html).
+      - Course work included: Quantum Groups, Differential Manifolds, Rings and Modules, Group Theory, Algebraic Topology, Linear Analysis.
+    button:
+      text: 'Read Dissertation'
+      url: 'https://era.library.ualberta.ca/items/071837db-6272-49f7-b803-edea17e658ca'
+  - area: MSc Mathematics
+    institution: University of Western Ontario
+    date_start: 2017-09-01
+    date_end: 2018-08-31
+    summary: |
+      - Course work included: Measure Theory, Functional Analysis, Complex Analysis, Differential Geometry, Rings and Modules, Representation Theory, Galois Cohomology, Algebraic Topology, Algebraic Geometry.
+  - area: BSc (Honours) Pure Mathematics
+    institution: Memorial University of Newfoundland
+    date_start: 2012-09-01
+    date_end: 2017-05-31
+    summary: |
+      - Thesis: *Yetter-Drinfel’d Modules and the Radford Projection Theorem*
+        - Completed under the supervision of [Dr. Yorck Sommerhäuser](https://www.math.mun.ca/~sommerh/).
+      - Course work included: Quantum Information & Computing, Mathematical Statistics, Advanced Linear Algebra, Abstract Algebra, Hopf Algebras, Ring Theory, Group Theory, Projective Geometry, Homotopy Theory, General Topology, Functional Analysis, Complex Function Theory, Number Theory, Set Theory.
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      url: ''
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
