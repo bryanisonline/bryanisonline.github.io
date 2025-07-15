@@ -40,9 +40,10 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Algebra
+  - Data Science
+  - Mathematical Physics
+  - Representation Theory
 
 education:
   - area: PhD Artificial Intelligence
