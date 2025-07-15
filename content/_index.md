@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: newfoundland.jpg
           filters:
-            brightness: 1.0
+            brightness: 0.3
           size: cover
           position: center
           parallax: false
