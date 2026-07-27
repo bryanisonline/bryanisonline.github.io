@@ -1,216 +1,203 @@
-# Rico Portfolio - Designer Portfolio Website
+<div align="center">
 
-> [中文文档](README-zh.md) | English
+# ⌁ Astro Keel
 
-A modern, high-performance designer portfolio website template built with Astro. Features a retro blue theme, dark mode support, beautiful animations, and excellent user experience.
+**A minimal, neutral, and modern portfolio + blog theme for Astro.**
 
-![Astro](https://img.shields.io/badge/Astro-5.15.4-FF5D01?logo=astro&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.14-38B2AC?logo=tailwind-css&logoColor=white)
-![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+A calm neutral base, a single configurable accent color, generous whitespace, and clean editorial typography — built on Astro 7 with Content Collections, tags, an RSS feed, and first-class dark mode.
 
-<a href="https://ko-fi.com/T6T817U4KZ" target="_blank" style="display:inline-block;margin:.5rem auto 1rem;" data-astro-cid-wlrjxfd7=""><img height="44" style=" border:0px;height:44px;" src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" alt="Buy Me a Coffee at ko-fi.com" data-astro-cid-wlrjxfd7=""></a>
+<br />
 
-## ✨ Features
+[![Live demo](https://img.shields.io/badge/Live_demo-↗-1a1a1a?style=for-the-badge)](https://kpab.github.io/astro-keel/)
 
-- 🚀 **Built with Astro** - Fast and lightweight static site generator
-- 🎨 **Modern Design** - Retro blue theme with dark/light mode toggle
-- 📱 **Fully Responsive** - Adapts to all device sizes
-- 🎭 **Beautiful Animations** - Using AOS and custom animation effects
-- 📝 **Blog System** - Supports MDX format blog posts
-- 🎯 **Portfolio Showcase** - Elegant portfolio showcase pages
-- 🔍 **SEO Optimized** - Built-in SEO and social media tags
-- ⚡ **Performance Optimized** - Image optimization, code splitting, lazy loading
+<br />
 
-## 🛠️ Tech Stack
+[![Deploy](https://img.shields.io/github/actions/workflow/status/kpab/astro-keel/deploy.yml?branch=main&style=flat-square&label=deploy)](https://github.com/kpab/astro-keel/actions/workflows/deploy.yml)
+[![License](https://img.shields.io/github/license/kpab/astro-keel?style=flat-square&color=1a1a1a)](./LICENSE)
+[![Stars](https://img.shields.io/github/stars/kpab/astro-keel?style=flat-square&color=1a1a1a)](https://github.com/kpab/astro-keel/stargazers)
+<br />
+[![Astro](https://img.shields.io/badge/Astro-7-BC52EE?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![MDX](https://img.shields.io/badge/MDX-1B1F24?style=flat-square&logo=mdx&logoColor=white)](https://mdxjs.com)
 
-- **Framework**: [Astro](https://astro.build) 5.15.4 
-- **Styling**: [Tailwind CSS](https://tailwindcss.com) 4.1.14
-- **Animations**: [AOS](https://michalsnik.github.io/aos/)
-- **Physics Engine**: [Matter.js](https://brm.io/matter-js/)
-- **Content Management**: MDX
-- **Type Checking**: TypeScript
+<br />
 
-## 📦 Installation
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/preview-dark.png" />
+  <img src=".github/assets/preview-light.png" alt="Astro Keel home page" width="800" />
+</picture>
 
-### Using Package Manager
+<table>
+  <tr>
+    <td><img src=".github/assets/preview-post-dark.png" alt="Blog post with table of contents and syntax highlighting, dark mode" /></td>
+    <td><img src=".github/assets/preview-works-light.png" alt="Works index page, light mode" /></td>
+  </tr>
+</table>
 
-```bash
+</div>
 
-# Using pnpm (recommended)
-pnpm install
+> **Keel** — the structural backbone of a ship. The name reflects the design intent: stripped of ornament, all structure and spine.
 
-# Using npm
+## Features
+
+- **Portfolio + blog** — dedicated `works` and `blog` content collections with individual pages.
+- **One-file site config** — site name, description, nav, and footer live in `src/consts.ts`.
+- **One-line accent color** — retune the whole theme by changing a single CSS variable (`--color-accent`).
+- **Light + dark mode** — respects `prefers-color-scheme` and remembers a manual toggle (no flash on load).
+- **Self-hosted type** — Fraunces (display), Public Sans (body), and JetBrains Mono (code) via `@fontsource`, no external font CDN.
+- **Tags** — per-tag archive pages at `/blog/tags/[tag]`.
+- **Pagination** — blog and tag archives paginate every 10 posts with hairline prev/next links.
+- **Static search** — zero-backend full-text search at `/search` powered by [Pagefind](https://pagefind.app/), indexed at build time.
+- **Auto OG images** — per-post and per-work Open Graph images rendered at build time with `satori` + `sharp`.
+- **Table of contents** — blog posts get an auto-generated sidebar TOC from their headings.
+- **RSS feed** — generated at `/rss.xml` with `@astrojs/rss`.
+- **Syntax highlighting** — Shiki dual themes (light/dark) wired to the active color scheme.
+- **SEO-ready** — canonical URLs, Open Graph, Twitter cards, and a sitemap out of the box.
+- **Responsive & accessible** — fluid type, hairline structure, visible focus rings.
+- **One-click deploy** — bundled GitHub Pages workflow; or ship the static `dist/` to Cloudflare Pages, Vercel, Netlify, or any static host.
+
+## Tech stack
+
+Astro 7 · TypeScript · Content Collections (Content Layer API) · MDX · `@astrojs/sitemap` · `@astrojs/rss` · Shiki. Requires **Node.js 22+**.
+
+## Quick start
+
+Scaffold a new project directly from this template:
+
+```sh
+npm create astro@latest -- --template kpab/astro-keel
+```
+
+Or click **Use this template** on GitHub, then:
+
+```sh
 npm install
-
-# Using yarn
-yarn install
+npm run dev      # start the dev server at http://localhost:4321
+npm run build    # build the static site to ./dist
+npm run preview  # preview the production build
 ```
 
-### Environment Variables Configuration
+## Configuration
 
-Copy `.env.example` to `.env` and fill in the corresponding configuration:
+### Site identity
 
-```bash
-cp .env.example .env
-```
+Site name, default meta description, RSS description, share image, nav items, and footer text all live in one file — `src/consts.ts`:
 
-Edit the `.env` file and fill in your configuration:
-
-```env
-# Site URL (optional, but has default value https://your-domain.com)
-# You can skip this on first deployment, but it's recommended to set the correct domain as soon as possible to optimize SEO
-PUBLIC_SITE_URL=https://your-domain.com
-
-# Analytics (optional)
-PUBLIC_GA4_ID=your-google-analytics-id
-PUBLIC_UMAMI_ID=your-umami-id
-```
-
-> **Note**: If `PUBLIC_SITE_URL` is not set, it will use the default value `https://your-domain.com`. While it won't cause errors, it's recommended to set the correct domain after deployment to ensure sitemap, RSS feed, and SEO meta tags work properly.
-
-## 🚀 Development
-
-```bash
-# Start development server
-npm run dev
-# or
-pnpm dev
-
-# Visit http://localhost:4321
-```
-
-## 📦 Build
-
-```bash
-# Build for production
-npm run build
-
-# Preview build result
-npm run preview
-```
-
-## 📁 Project Structure
-
-```
-├── public/              # Static assets
-│   ├── assets/         # Images, videos, etc.
-│   └── favicon.png     # Site favicon
-├── src/
-│   ├── assets/         # Source assets
-│   ├── collections/    # Data collections (works, experiences, etc.)
-│   ├── components/     # Astro components
-│   │   ├── cards/      # Card components
-│   │   ├── sections/   # Section components
-│   │   ├── ui/         # UI components
-│   │   └── widgets/    # Widgets
-│   ├── config/         # Configuration files
-│   ├── content/        # MDX blog content
-│   ├── layouts/        # Layout components
-│   ├── pages/          # Page routes
-│   ├── scripts/        # Script files
-│   └── styles/         # Style files
-├── astro.config.mjs    # Astro configuration
-├── tailwind.config.mjs # Tailwind configuration
-└── package.json        # Project dependencies
-```
-
-## 🎨 Customization
-
-### Modify Site Information
-
-Edit the `src/config/site.js` file to modify the site's basic information:
-
-```javascript
-export const siteConfig = {
-  title: "Your Portfolio",
-  author: "Your Name",
-  url: "https://your-domain.com",
-  // ... more configuration
+```ts
+export const SITE = {
+  title: 'Astro Keel',
+  description: 'A minimal, neutral, and modern portfolio and blog theme for Astro.',
+  // ...
 };
 ```
 
-### Modify Theme Colors
+### Site URL
 
-Edit the CSS variables in the `src/styles/global.css` file:
+Set your deployed URL in `astro.config.mjs` — it powers canonical links, the sitemap, and RSS:
+
+```js
+export default defineConfig({
+  site: 'https://your-domain.com',
+  // ...
+});
+```
+
+### Base path
+
+Internal links and assets are routed through a `withBase()` helper (`src/lib/url.ts`), so the theme works whether it's served from a domain root or a subpath. Serving from a subpath — like a GitHub Pages **project site** at `https://<user>.github.io/<repo>/` — just needs `site` + `base`:
+
+```js
+export default defineConfig({
+  site: 'https://<user>.github.io',
+  base: '/<repo>',
+});
+```
+
+For a custom domain or a `<user>.github.io` **root site**, omit `base` (or set it to `'/'`).
+
+## Customization
+
+### Accent color
+
+Change one line in `src/styles/global.css`. Hover and soft variants derive automatically:
 
 ```css
-@theme {
-  --color-primary: #2d6dc3;
-  --color-primary-dark: #3b7bd9;
-  /* ... more color variables */
+:root {
+  --color-accent: oklch(0.54 0.14 35); /* ← your brand color */
 }
 ```
 
-### Add Works
+### Fonts
 
-Add your work information in `src/collections/works.json`.
+Font families are CSS variables (`--font-display`, `--font-body`, `--font-mono`) in `src/styles/global.css`. Swap a face by installing another `@fontsource` package, importing it in `src/layouts/BaseLayout.astro`, and updating the variable.
 
-### Add Blog Posts
+### Dark mode
 
-Create new MDX files in the `src/content/post/` directory. The project uses Astro v5 Content Layer API with `glob` loader for content collections, ensuring compatibility with Astro v6.
+Neutral palettes for both schemes live in `src/styles/global.css` under `:root`, `[data-theme='light']`, and `[data-theme='dark']`. The toggle in the header persists the choice to `localStorage`.
 
-- ✅ Uses new Content Layer API (`glob` loader)
-- ✅ Uses `entry.id` instead of deprecated `entry.slug`
-- ✅ Uses `render(entry)` instead of deprecated `entry.render()`
-- ✅ Uses `import.meta.env` instead of `process.env`
-- ✅ Uses `import.meta.glob()` instead of deprecated `Astro.glob()`
-- ✅ All `getStaticPaths()` params are string type 
+## Authoring content
 
-## Figma Assets
+Add Markdown/MDX files under `src/content/`:
 
-- **Programming Sticker**: [Figma rogramming-sticker-1-0](https://www.figma.com/community/file/1392100849031958853/programming-sticker-1-0)
-- **Bento Cards**：[Figma Bento Cards](https://www.figma.com/community/file/1231184483170475120)
-- **Social Cards**: [Figma Bento 2.5d](https://www.figma.com/community/file/1232620929235403629/bento-2-5d-widgets)
+- `src/content/works/*.md` — portfolio entries
+- `src/content/blog/*.md` — blog posts
 
+### Works frontmatter
 
-## 📧 Contact
+```yaml
+---
+title: Project name
+description: One-line summary.
+tech: ["Astro", "TypeScript"]
+link: https://example.com        # optional — live link
+repo: https://github.com/...     # optional — source
+thumbnail: ./cover.png           # optional — relative image
+order: 1                         # optional — manual sort
+publishDate: 2026-06-01
+---
+```
 
-- **Author**: Ricoui
-- **Blog**: [ricoui.com](https://ricoui.com)
-- **Email**: hello@ricoui.com
-- **Twitter**: [@ricouii](https://x.com/ricouii)
-- **GitHub**: [@ricocc](https://github.com/ricocc)
+### Blog frontmatter
 
+```yaml
+---
+title: Post title
+publishDate: 2026-06-01
+description: One-line summary for listings, SEO, and RSS.
+tags: ["design", "astro"]
+draft: false                     # true hides it from build output
+heroImage: ./hero.png            # optional — relative image
+---
+```
 
-## 💡 Other Products
+## Project structure
 
-- **Rico Blog** - Open Source: [https://github.com/ricocc/public-portfolio-site](https://github.com/ricocc/public-portfolio-site)
+```
+src/
+  consts.ts          # site name, description, nav, footer
+  content/           # works/ and blog/ Markdown & MDX entries
+  content.config.ts  # collection schemas (Content Layer API)
+  layouts/           # BaseLayout (head, nav, theme toggle)
+  pages/             # routes: /, /about, /works, /blog, tags, rss.xml
+  styles/            # global.css design tokens
+astro.config.mjs     # site URL, integrations, Shiki config
+```
 
-- **OG Gallery**: [ricoog.com](https://ricoog.com/)
+## Deployment
 
+### GitHub Pages
 
-## 🙏 Acknowledgments
+A workflow at `.github/workflows/deploy.yml` builds the site and publishes it on every push to `main`.
 
-- [Astro](https://astro.build) - Excellent static site generator
-- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
-- All developers who contributed to this project
+1. Set `site` and `base` in `astro.config.mjs` to match your repository (see [Base path](#base-path)).
+2. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+3. Push to `main` (or run the workflow manually from the **Actions** tab). Your site goes live at `https://<user>.github.io/<repo>/`.
 
+### Other static hosts
 
-## About the Author
+`npm run build` emits a static `dist/` that deploys as-is to Cloudflare Pages, Vercel, Netlify, or any static host. Drop `base` from `astro.config.mjs` when serving from a domain root.
 
-I'm Rico, a web/UI designer passionate about creating fun and creative work. I have experience in UI/UX design and am currently focused on web design, visual implementation, and exploring development projects. I regularly update my blog on <a href="https://ricoui.com/" target="_blank">Rico's Blog</a>. You can also follow me on Xiaohongshu  [@Rico的设计漫想](https://www.xiaohongshu.com/user/profile/5f2b6903000000000101f51f) 和 X [@ricouii](https://x.com/ricouii).
+## License
 
-
-Or add me on WeChat—let’s be friends.
-
-<img src="https://ricoui.com/assets/wechat.png" alt="ricocc-wechat" width="280" height="auto" style="display:inline-block;margin:12px;">
-
-
-## 💜 Support the Author
-
-If you’ve found this helpful, even a small contribution can greatly encourage creators. Thank you!
-
-<img src="https://ricoui.com/assets/zanshangma.jpg" alt="ricocc-wechat" width="280" height="auto" style="display:inline-block;margin:12px;">
-
-<a href="https://ko-fi.com/T6T817U4KZ" target="_blank" style="display:inline-block;margin:.5rem auto 1rem;" data-astro-cid-wlrjxfd7=""><img height="44" style=" border:0px;height:44px;" src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" alt="Buy Me a Coffee at ko-fi.com" data-astro-cid-wlrjxfd7=""></a>
-
-## 📝 Changelog
-
-### Latest Updates 
-
-- **Upgraded to Astro 5.15.4** - Fully compliant with Astro v5.15 standards
-- **Content Collections Upgrade** - Using new Content Layer API, all legacy APIs removed
-- **API Modernization** - All deprecated APIs updated to latest standards
-- **Performance Optimization** - Optimized build and runtime performance
-
-⭐ If this project helps you, please give it a Star!
+[MIT](./LICENSE)
