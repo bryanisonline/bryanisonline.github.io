@@ -1,0 +1,150 @@
+---
+import { Image } from "astro:assets";
+import ProductCard from "@/components/ProductCard.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getProjects, getRelated } from "@/data/products.js";
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project, related: getRelated(projects, project.slug) },
+  }));
+}
+
+const { project, related } = Astro.props;
+const projectUrl = new URL(`/projects/${project.slug}`, Astro.site ?? Astro.url.origin).href;
+---
+
+<BaseLayout
+  title={`${project.title} — Bryan Kettle`}
+  description={project.summary.slice(0, 155)}
+  image={project.images[0]}
+>
+  <main id="main-content">
+  <div class="mx-auto max-w-screen-xl px-6 pt-8">
+    <nav class="flex gap-2 text-xs uppercase tracking-widest text-faded" aria-label="Breadcrumb">
+      <a href="/projects" class="hover:text-ink">Projects</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-ink" aria-current="page">{project.title}</span>
+    </nav>
+  </div>
+
+  <div class="mx-auto max-w-screen-xl px-6 py-12">
+    <section class="grid grid-cols-1 items-start gap-16 lg:grid-cols-12">
+      <div class="space-y-6 lg:col-span-7" data-product-gallery>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-[min(1vw,12px)] bg-paper">
+          {
+            project.images.map((image, index) => (
+              <div class:list={["absolute inset-0", index !== 0 && "hidden"]} data-gallery-panel={index}>
+                <Image
+                  src={image}
+                  alt={`${project.title} — view ${index + 1}`}
+                  width={1440}
+                  height={1800}
+                  format="webp"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  class="atelier-fade-in h-full w-full object-cover"
+                />
+              </div>
+            ))
+          }
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          {
+            project.images.map((image, index) => (
+              <button
+                type="button"
+                class:list={[
+                  "aspect-square overflow-hidden rounded-[min(1vw,12px)] bg-paper ring-1 transition-all",
+                  index === 0 ? "ring-ink" : "ring-line hover:ring-ink/40",
+                ]}
+                data-gallery-thumb={index}
+                aria-label={`Show view ${index + 1}`}
+                aria-pressed={index === 0 ? "true" : "false"}
+              >
+                <Image src={image} alt="" width={360} height={360} format="webp" loading="lazy" class="h-full w-full object-cover" />
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="space-y-12 lg:sticky lg:top-24 lg:col-span-5">
+        <div class="space-y-4">
+          <div class="text-xs uppercase tracking-widest text-faded">{project.category}</div>
+          <h1 class="text-balance font-serif text-4xl leading-tight md:text-5xl">{project.title}</h1>
+          <p class="max-w-[44ch] text-pretty leading-relaxed text-faded">{project.summary}</p>
+        </div>
+
+        <div class="space-y-6">
+          {project.technology && project.technology.length > 0 && (
+            <div class="space-y-3">
+              <h3 class="text-xs uppercase tracking-widest text-faded">Technology Stack</h3>
+              <div class="flex flex-wrap gap-2">
+                {project.technology.map((tech) => (
+                  <span class="inline-block rounded-full bg-paper px-3 py-1 text-xs font-medium text-ink">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          {project.focus && (
+            <div class="space-y-3 border-t border-line pt-6">
+              <h3 class="text-xs uppercase tracking-widest text-faded">Focus Area</h3>
+              <p class="text-sm leading-relaxed">{project.focus}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-24 space-y-12 border-t border-line pt-16 md:mt-32">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="font-serif text-3xl md:text-4xl">Related Projects</h2>
+        <a href="/projects" class="text-xs uppercase tracking-widest underline underline-offset-4 hover:text-accent">
+          View all
+        </a>
+      </div>
+      <div class="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-3">
+        {related.map((item) => <ProductCard product={item} />)}
+      </div>
+    </section>
+  </div>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.summary,
+    image: project.images.map((image) => new URL(image.src, Astro.url.origin).href),
+    creator: {
+      "@type": "Person",
+      name: "Bryan Kettle",
+    },
+    url: projectUrl,
+  })}></script>
+
+  <script is:inline>
+    const gallery = document.querySelector("[data-product-gallery]");
+    if (gallery) {
+      const panels = Array.from(gallery.querySelectorAll("[data-gallery-panel]"));
+      const thumbs = Array.from(gallery.querySelectorAll("[data-gallery-thumb]"));
+
+      thumbs.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          const active = thumb.dataset.galleryThumb;
+          panels.forEach((panel) => panel.classList.toggle("hidden", panel.dataset.galleryPanel !== active));
+          thumbs.forEach((button) => {
+            const selected = button.dataset.galleryThumb === active;
+            button.classList.toggle("ring-ink", selected);
+            button.classList.toggle("ring-line", !selected);
+            button.setAttribute("aria-pressed", selected ? "true" : "false");
+          });
+        });
+      });
+    }
+  </script>
+  </main>
+</BaseLayout>

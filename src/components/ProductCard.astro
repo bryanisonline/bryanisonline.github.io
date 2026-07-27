@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+
+const { product, eager = false } = Astro.props;
+---
+
+<a href={`/products/${product.slug}`} class="group block space-y-4" data-product-card>
+  <div class="aspect-[4/5] overflow-hidden rounded-[min(1vw,12px)] bg-paper">
+    <Image
+      src={product.images[0]}
+      alt={`${product.title} — ${product.shortDescription}`}
+      width={1024}
+      height={1280}
+      loading={eager ? "eager" : "lazy"}
+      decoding={eager ? "sync" : "async"}
+      format="webp"
+      class="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+    />
+  </div>
+  <div class="space-y-3">
+    <div>
+      <h2 class="text-sm font-medium">{product.title}</h2>
+      <p class="text-xs text-faded">{product.shortDescription}</p>
+    </div>
+    {product.technology && product.technology.length > 0 && (
+      <div class="flex flex-wrap gap-2">
+        {product.technology.slice(0, 3).map((tech) => (
+          <span class="inline-block rounded-full bg-paper px-2.5 py-0.5 text-[11px] font-medium text-ink">
+            {tech}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
+</a>

@@ -1,0 +1,32 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer id="contact" class="mt-32 border-t border-line py-24">
+  <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-12 px-6 md:grid-cols-3">
+    <div class="space-y-4">
+      <div class="font-serif text-lg italic tracking-tight">Bryan Kettle</div>
+      <p class="max-w-[30ch] text-sm leading-relaxed text-faded">
+        AI/ML Engineer. Deep learning, neural networks, and production systems.
+      </p>
+    </div>
+    <div class="space-y-4">
+      <h2 class="text-xs font-medium uppercase tracking-widest">Contact</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="mailto:bkettle@ualberta.ca" class="text-faded transition-colors hover:text-ink">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/bryanisonline/" class="text-faded transition-colors hover:text-ink">LinkedIn</a></li>
+        <li><a href="https://github.com/bryanisonline" class="text-faded transition-colors hover:text-ink">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h2 class="text-xs font-medium uppercase tracking-widest">Site</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/projects" class="text-faded transition-colors hover:text-ink">Projects</a></li>
+        <li><a href="/about" class="text-faded transition-colors hover:text-ink">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mx-auto mt-16 max-w-screen-xl px-6 text-[10px] uppercase tracking-[0.2em] text-faded">
+    © {year} Bryan Kettle — Built with Astro.
+  </div>
+</footer>

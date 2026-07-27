@@ -1,0 +1,146 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import workshopImg from "@/assets/atelier-workshop.jpg";
+---
+
+<BaseLayout
+  title="About — Bryan Kettle"
+  description="AI/ML Engineer with a PhD in Mathematics. Deep learning, neural networks, and production machine learning systems."
+  image={workshopImg}
+>
+  <main id="main-content">
+  <section class="mx-auto max-w-screen-xl px-6 pb-16 pt-20 md:pb-24 md:pt-28">
+    <p class="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-faded">
+      <span class="inline-block h-px w-8 bg-ink/40"></span>
+      About
+    </p>
+    <h1 class="max-w-[18ch] text-balance font-serif text-5xl leading-[0.95] md:text-7xl">
+      From mathematics, <span class="italic text-accent">to machine learning.</span>
+    </h1>
+    <p class="mt-8 max-w-[58ch] text-lg leading-relaxed text-faded">
+      I build neural networks and production ML systems. With a PhD in pure mathematics and experience at State Street, I combine mathematical rigor with practical engineering for problems that matter.
+    </p>
+  </section>
+
+  <section class="relative w-full">
+    <Image
+      src={workshopImg}
+      alt="AI and machine learning work environment"
+      width={1920}
+      height={1080}
+      format="webp"
+      loading="eager"
+      class="h-[50vh] w-full object-cover md:h-[70vh]"
+    />
+  </section>
+
+  <section class="mx-auto mt-24 grid max-w-screen-xl gap-10 px-6 md:mt-32 md:grid-cols-12 md:gap-16">
+    <div class="md:col-span-5">
+      <p class="mb-6 text-[11px] uppercase tracking-[0.3em] text-faded">PhD Mathematics, 2023</p>
+      <h2 class="text-balance font-serif text-3xl leading-[1.02] md:text-5xl">The transition to ML.</h2>
+    </div>
+    <div class="space-y-6 leading-relaxed text-faded md:col-span-6 md:col-start-7">
+      <p>
+        My doctoral research focused on algebraic structures and representation theory—specifically Yangians and their representations in quantum group theory. This work taught me to reason rigorously about abstract structures and complex mathematical frameworks.
+      </p>
+      <p>
+        As I transitioned to industry, I realized that the same mathematical intuition applies beautifully to deep learning. Neural networks are mathematical objects with structure. Understanding their behavior requires both theoretical grounding and practical engineering.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto mt-24 max-w-screen-xl border-t border-line px-6 pt-12 md:mt-32">
+    <p class="mb-12 text-[11px] uppercase tracking-[0.3em] text-faded">How I work</p>
+    <div class="grid gap-x-8 gap-y-12 md:grid-cols-3">
+      {
+        [
+          {
+            n: "01",
+            h: "Rigor first",
+            p: "Mathematical precision in model design, optimization, and analysis. Understanding why something works, not just that it does.",
+          },
+          {
+            n: "02",
+            h: "Production systems",
+            p: "Code that works in notebooks is just a start. I build systems that deploy, monitor, scale, and handle failure gracefully.",
+          },
+          {
+            n: "03",
+            h: "Clear communication",
+            p: "Complex ideas deserve clear explanations. Whether it's documentation, code comments, or technical writing—clarity matters.",
+          },
+        ].map((block) => (
+          <div class="space-y-3">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-faded tabular-nums">{block.n}</p>
+            <h3 class="font-serif text-2xl">{block.h}</h3>
+            <p class="text-sm leading-relaxed text-faded">{block.p}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto mt-24 max-w-screen-xl border-y border-line px-6 py-12 md:mt-32">
+    <div class="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
+      {
+        [
+          { n: "PhD", l: "Mathematics, Alberta" },
+          { n: "MSc", l: "Mathematics, Western Ontario" },
+          { n: "BSc", l: "Pure Mathematics, Memorial" },
+          { n: "Now", l: "AI/ML Engineer, State Street" },
+        ].map((stat) => (
+          <div class="space-y-2">
+            <p class="font-serif text-xl tabular-nums md:text-2xl">{stat.n}</p>
+            <p class="text-[10px] uppercase tracking-[0.3em] text-faded">{stat.l}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto mt-24 max-w-screen-xl px-6 md:mt-32">
+    <div class="border-t border-line pt-12">
+      <p class="mb-6 text-[11px] uppercase tracking-[0.3em] text-faded">Technical skills</p>
+      <div class="grid gap-x-8 gap-y-8 md:grid-cols-2">
+        <div class="space-y-4">
+          <h3 class="font-serif text-xl">Languages & Frameworks</h3>
+          <p class="text-sm leading-relaxed text-faded">
+            Python, PyTorch, TensorFlow, JAX, Hugging Face transformers, scikit-learn, FastAPI, Kubernetes, Docker
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="font-serif text-xl">Areas of Focus</h3>
+          <p class="text-sm leading-relaxed text-faded">
+            Deep learning architectures, neural network optimization, LLM fine-tuning, model compression, production deployment, ML infrastructure
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="mx-auto mb-32 mt-12 max-w-screen-xl px-6 md:mt-16">
+    <div class="grid items-end gap-10 md:grid-cols-12">
+      <div class="md:col-span-7">
+        <h2 class="max-w-[20ch] text-balance font-serif text-3xl leading-[1.02] md:text-5xl">
+          Interested in talking about AI/ML?
+        </h2>
+      </div>
+      <div class="flex flex-col gap-4 sm:flex-row md:col-span-5 md:justify-end">
+        <a
+          href="/projects"
+          class="inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--color-base)] transition-colors hover:bg-accent"
+        >
+          View projects →
+        </a>
+        <a
+          href="mailto:bkettle@ualberta.ca"
+          class="inline-flex items-center justify-center gap-3 rounded-full px-7 py-4 text-[11px] font-medium uppercase tracking-[0.2em] text-ink ring-1 ring-line transition-colors hover:bg-paper"
+        >
+          Get in touch
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+</BaseLayout>

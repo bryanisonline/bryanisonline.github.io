@@ -1,0 +1,138 @@
+---
+import ProductCard from "@/components/ProductCard.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getProjectFilters, getProjects } from "@/data/products.js";
+
+const projects = await getProjects();
+const { categories: allCategories, technologies: allTechnologies } = getProjectFilters(projects);
+---
+
+<BaseLayout
+  title="Projects — Bryan Kettle"
+  description="Browse AI/ML projects and technical implementations."
+>
+  <main id="main-content">
+  <section class="mx-auto max-w-screen-xl px-6 pb-12 pt-20 md:pb-16 md:pt-28">
+    <p class="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-faded">
+      <span class="inline-block h-px w-8 bg-ink/40"></span>
+      Projects
+    </p>
+    <h1 class="max-w-[18ch] text-balance font-serif text-5xl leading-[0.95] md:text-6xl">
+      Deep learning projects, <span class="italic text-accent">deployed at scale.</span>
+    </h1>
+    <p class="mt-6 max-w-[52ch] leading-relaxed text-faded">
+      AI/ML work across neural network design, model optimization, and production deployment. Filter by category or technology stack.
+    </p>
+  </section>
+
+  <div class="mx-auto max-w-screen-xl px-6 pb-32">
+    <section class="border-t border-line pb-12 pt-8" aria-label="Project filters">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div class="space-y-4">
+          <h2 class="text-xs uppercase tracking-[0.25em] text-faded">
+            <span data-catalog-count>{projects.length}</span> <span data-catalog-count-label>project</span>{projects.length !== 1 ? "s" : ""}
+          </h2>
+          <div class="flex flex-wrap items-center gap-2" data-filter-group="category">
+            <button class="catalog-chip is-active" type="button" data-filter-value="all" aria-pressed="true">All Categories</button>
+            {allCategories.map((category) => <button class="catalog-chip" type="button" data-filter-value={category} aria-pressed="false">{category}</button>)}
+          </div>
+          <div class="flex flex-wrap items-center gap-2" data-filter-group="technology">
+            <button class="catalog-chip is-active" type="button" data-filter-value="all" aria-pressed="true">All Technologies</button>
+            {allTechnologies.slice(0, 8).map((tech) => <button class="catalog-chip" type="button" data-filter-value={tech} aria-pressed="false">{tech}</button>)}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="hidden py-32 text-center font-serif text-2xl text-faded" data-catalog-empty>
+      No projects match that selection.
+    </p>
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3" data-catalog-grid>
+      {
+        projects.map((project, index) => (
+          <article
+            data-catalog-item
+            data-category={project.category}
+            data-technology={project.technology.join(",")}
+            data-index={index}
+          >
+            <ProductCard product={project} />
+          </article>
+        ))
+      }
+    </div>
+  </div>
+
+  <style>
+    .catalog-chip {
+      border-radius: 9999px;
+      padding: 0.375rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1rem;
+      color: var(--color-ink);
+      box-shadow: inset 0 0 0 1px var(--color-line);
+      transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .catalog-chip:hover {
+      background-color: var(--color-paper);
+    }
+
+    .catalog-chip.is-active {
+      background-color: var(--color-ink);
+      color: var(--color-base);
+      box-shadow: inset 0 0 0 1px var(--color-ink);
+    }
+  </style>
+
+  <script is:inline>
+    const grid = document.querySelector("[data-catalog-grid]");
+    const items = Array.from(document.querySelectorAll("[data-catalog-item]"));
+    const countNode = document.querySelector("[data-catalog-count]");
+    const countLabel = document.querySelector("[data-catalog-count-label]");
+    const empty = document.querySelector("[data-catalog-empty]");
+    const filters = { category: "all", technology: "all" };
+
+    function applyFilters() {
+      const visible = items.filter((item) => {
+        const categoryMatch = filters.category === "all" || item.dataset.category === filters.category;
+        const technologyMatch = 
+          filters.technology === "all" || 
+          (item.dataset.technology || "").split(",").includes(filters.technology);
+        return categoryMatch && technologyMatch;
+      });
+
+      items.forEach((item) => (item.hidden = true));
+      visible.forEach((item) => {
+        item.hidden = false;
+        grid.appendChild(item);
+      });
+
+      countNode.textContent = String(visible.length);
+      countLabel.textContent = visible.length === 1 ? "project" : "projects";
+      empty.classList.toggle("hidden", visible.length > 0);
+      grid.classList.toggle("hidden", visible.length === 0);
+    }
+
+    document.querySelectorAll("[data-filter-group]").forEach((group) => {
+      group.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-filter-value]");
+        if (!button) return;
+        const key = group.dataset.filterGroup;
+        filters[key] = button.dataset.filterValue;
+        group.querySelectorAll("button").forEach((chip) => {
+          chip.classList.remove("is-active");
+          chip.setAttribute("aria-pressed", "false");
+        });
+        button.classList.add("is-active");
+        button.setAttribute("aria-pressed", "true");
+        applyFilters();
+      });
+    });
+  </script>
+</main>
+</BaseLayout>

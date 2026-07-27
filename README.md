@@ -1,203 +1,136 @@
-<div align="center">
+# Atelier Kō - Minimalist Furniture Store Theme
 
-# ⌁ Astro Keel
+[![Atelier Kō theme preview](preview.webp)](https://atelier-ko-topaz.vercel.app/)
 
-**A minimal, neutral, and modern portfolio + blog theme for Astro.**
+![Astro 6](https://img.shields.io/badge/Astro-6.4.8-ff5d01?style=for-the-badge&logo=astro&logoColor=white)
+![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4.1-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-27272a?style=for-the-badge)
 
-A calm neutral base, a single configurable accent color, generous whitespace, and clean editorial typography — built on Astro 7 with Content Collections, tags, an RSS feed, and first-class dark mode.
+Preview: [https://atelier-ko-topaz.vercel.app/](https://atelier-ko-topaz.vercel.app/)
 
-<br />
-
-[![Live demo](https://img.shields.io/badge/Live_demo-↗-1a1a1a?style=for-the-badge)](https://kpab.github.io/astro-keel/)
-
-<br />
-
-[![Deploy](https://img.shields.io/github/actions/workflow/status/kpab/astro-keel/deploy.yml?branch=main&style=flat-square&label=deploy)](https://github.com/kpab/astro-keel/actions/workflows/deploy.yml)
-[![License](https://img.shields.io/github/license/kpab/astro-keel?style=flat-square&color=1a1a1a)](./LICENSE)
-[![Stars](https://img.shields.io/github/stars/kpab/astro-keel?style=flat-square&color=1a1a1a)](https://github.com/kpab/astro-keel/stargazers)
-<br />
-[![Astro](https://img.shields.io/badge/Astro-7-BC52EE?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Node.js](https://img.shields.io/badge/Node.js-22+-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![MDX](https://img.shields.io/badge/MDX-1B1F24?style=flat-square&logo=mdx&logoColor=white)](https://mdxjs.com)
-
-<br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/preview-dark.png" />
-  <img src=".github/assets/preview-light.png" alt="Astro Keel home page" width="800" />
-</picture>
-
-<table>
-  <tr>
-    <td><img src=".github/assets/preview-post-dark.png" alt="Blog post with table of contents and syntax highlighting, dark mode" /></td>
-    <td><img src=".github/assets/preview-works-light.png" alt="Works index page, light mode" /></td>
-  </tr>
-</table>
-
-</div>
-
-> **Keel** — the structural backbone of a ship. The name reflects the design intent: stripped of ornament, all structure and spine.
+Atelier Kō is a quiet, editorial Astro theme for a small furniture atelier or craft-led product catalogue. Fully static, with small JavaScript enhancements for the catalogue filters, product gallery, and local cart.
 
 ## Features
 
-- **Portfolio + blog** — dedicated `works` and `blog` content collections with individual pages.
-- **One-file site config** — site name, description, nav, and footer live in `src/consts.ts`.
-- **One-line accent color** — retune the whole theme by changing a single CSS variable (`--color-accent`).
-- **Light + dark mode** — respects `prefers-color-scheme` and remembers a manual toggle (no flash on load).
-- **Self-hosted type** — Fraunces (display), Public Sans (body), and JetBrains Mono (code) via `@fontsource`, no external font CDN.
-- **Tags** — per-tag archive pages at `/blog/tags/[tag]`.
-- **Pagination** — blog and tag archives paginate every 10 posts with hairline prev/next links.
-- **Static search** — zero-backend full-text search at `/search` powered by [Pagefind](https://pagefind.app/), indexed at build time.
-- **Auto OG images** — per-post and per-work Open Graph images rendered at build time with `satori` + `sharp`.
-- **Table of contents** — blog posts get an auto-generated sidebar TOC from their headings.
-- **RSS feed** — generated at `/rss.xml` with `@astrojs/rss`.
-- **Syntax highlighting** — Shiki dual themes (light/dark) wired to the active color scheme.
-- **SEO-ready** — canonical URLs, Open Graph, Twitter cards, and a sitemap out of the box.
-- **Responsive & accessible** — fluid type, hairline structure, visible focus rings.
-- **One-click deploy** — bundled GitHub Pages workflow; or ship the static `dist/` to Cloudflare Pages, Vercel, Netlify, or any static host.
+- Polished homepage with hero, featured products, material story, newsletter form, and footer
+- Catalogue page with client-side category and material filters, and price sorting
+- Static product detail pages generated from Markdown content with Zod-validated frontmatter
+- Product image gallery with thumbnail navigation
+- LocalStorage cart with quantity controls and a multi-step checkout preview
+- About page with workshop story, principles, image-led sections, and contact CTA
+- Astro-optimized images served in WebP with responsive widths
+- Self-hosted WOFF2 fonts (Inter, Instrument Serif) — no external requests
+- Full SEO: canonical URLs, Open Graph, Twitter cards, Product and Organization JSON-LD, sitemap, dynamic `robots.txt`
+- Accessible: skip-to-content link, ARIA labels, focus-managed mobile menu, semantic HTML
+- Strict TypeScript throughout
 
-## Tech stack
+## Tech Stack
 
-Astro 7 · TypeScript · Content Collections (Content Layer API) · MDX · `@astrojs/sitemap` · `@astrojs/rss` · Shiki. Requires **Node.js 22+**.
+- Astro 6
+- Tailwind CSS 4
+- TypeScript (strict)
+- Static output
 
-## Quick start
+## Getting Started
 
-Scaffold a new project directly from this template:
-
-```sh
-npm create astro@latest -- --template kpab/astro-keel
-```
-
-Or click **Use this template** on GitHub, then:
-
-```sh
+```bash
 npm install
-npm run dev      # start the dev server at http://localhost:4321
-npm run build    # build the static site to ./dist
-npm run preview  # preview the production build
+npm run dev
 ```
 
-## Configuration
+Build for production:
 
-### Site identity
-
-Site name, default meta description, RSS description, share image, nav items, and footer text all live in one file — `src/consts.ts`:
-
-```ts
-export const SITE = {
-  title: 'Astro Keel',
-  description: 'A minimal, neutral, and modern portfolio and blog theme for Astro.',
-  // ...
-};
+```bash
+npm run build
 ```
 
-### Site URL
+Preview the production build locally:
 
-Set your deployed URL in `astro.config.mjs` — it powers canonical links, the sitemap, and RSS:
-
-```js
-export default defineConfig({
-  site: 'https://your-domain.com',
-  // ...
-});
+```bash
+npm run preview
 ```
 
-### Base path
+## Theme Setup
 
-Internal links and assets are routed through a `withBase()` helper (`src/lib/url.ts`), so the theme works whether it's served from a domain root or a subpath. Serving from a subpath — like a GitHub Pages **project site** at `https://<user>.github.io/<repo>/` — just needs `site` + `base`:
+Update the production URL before publishing:
 
-```js
-export default defineConfig({
-  site: 'https://<user>.github.io',
-  base: '/<repo>',
-});
+```bash
+SITE=https://your-domain.com npm run build
 ```
 
-For a custom domain or a `<user>.github.io` **root site**, omit `base` (or set it to `'/'`).
+The configured `site` value is used for canonical URLs, sitemap generation, and `robots.txt`. The default preview site is `https://atelier-ko-topaz.vercel.app/`.
 
-## Customization
+Main content files:
 
-### Accent color
+- `src/content/products/*.md` — product catalogue entries, frontmatter, images, and descriptions
+- `src/content.config.ts` — product content collection schema
+- `src/data/products.ts` — helper utilities that read and sort product content
+- `src/layouts/BaseLayout.astro` — shared metadata, global shell, header/footer slots, and cart helper
+- `src/components/SiteHeader.astro` — navigation and cart badge
+- `src/components/SiteFooter.astro` — footer links and studio copy
+- `src/styles.css` — design tokens, Tailwind setup, and local font declarations
 
-Change one line in `src/styles/global.css`. Hover and soft variants derive automatically:
+## Adding Products
 
-```css
-:root {
-  --color-accent: oklch(0.54 0.14 35); /* ← your brand color */
-}
-```
+Add one Markdown file per product in `src/content/products/`. The file name becomes the product URL slug, so `arvid-chair.md` becomes `/products/arvid-chair`.
 
-### Fonts
-
-Font families are CSS variables (`--font-display`, `--font-body`, `--font-mono`) in `src/styles/global.css`. Swap a face by installing another `@fontsource` package, importing it in `src/layouts/BaseLayout.astro`, and updating the variable.
-
-### Dark mode
-
-Neutral palettes for both schemes live in `src/styles/global.css` under `:root`, `[data-theme='light']`, and `[data-theme='dark']`. The toggle in the header persists the choice to `localStorage`.
-
-## Authoring content
-
-Add Markdown/MDX files under `src/content/`:
-
-- `src/content/works/*.md` — portfolio entries
-- `src/content/blog/*.md` — blog posts
-
-### Works frontmatter
-
-```yaml
+```md
 ---
-title: Project name
-description: One-line summary.
-tech: ["Astro", "TypeScript"]
-link: https://example.com        # optional — live link
-repo: https://github.com/...     # optional — source
-thumbnail: ./cover.png           # optional — relative image
-order: 1                         # optional — manual sort
-publishDate: 2026-06-01
+name: Arvid Chair
+collection: Collection 01 — Seating
+category: Seating
+material: Ash
+price: 840
+shortDescription: Curved Ash
+dimensions: W 54 × D 56 × H 92 cm
+finish: Soap-Treated
+leadTime: 6–8 Weeks
+images:
+  - ../../assets/p-arvid-1.jpg
+  - ../../assets/p-arvid-2.jpg
+order: 2
 ---
+
+A single sculpted shell of steam-bent ash, the Arvid Chair traces the silhouette of the body.
 ```
 
-### Blog frontmatter
+Product images should live in `src/assets/` so Astro can optimize them. Categories and materials are derived automatically from the product files and appear as catalogue filters.
 
-```yaml
----
-title: Post title
-publishDate: 2026-06-01
-description: One-line summary for listings, SEO, and RSS.
-tags: ["design", "astro"]
-draft: false                     # true hides it from build output
-heroImage: ./hero.png            # optional — relative image
----
-```
+## Pages
 
-## Project structure
+- `/` — Homepage
+- `/catalog` — Full catalogue with filters
+- `/products/[slug]` — Product detail
+- `/about` — Studio story
+- `/cart` — Cart and checkout preview
 
-```
-src/
-  consts.ts          # site name, description, nav, footer
-  content/           # works/ and blog/ Markdown & MDX entries
-  content.config.ts  # collection schemas (Content Layer API)
-  layouts/           # BaseLayout (head, nav, theme toggle)
-  pages/             # routes: /, /about, /works, /blog, tags, rss.xml
-  styles/            # global.css design tokens
-astro.config.mjs     # site URL, integrations, Shiki config
-```
+## Images and Fonts
+
+Theme images live in `src/assets` and render through Astro's image pipeline. Local fonts live in `src/assets/fonts`; only the weights and styles used by the theme are included.
+
+Use `public/` only for files that should be served as-is.
+
+## SEO
+
+- Unique page titles and descriptions
+- Canonical URLs
+- Open Graph and Twitter card metadata
+- Sitemap generation via `@astrojs/sitemap`
+- Dynamic `robots.txt`
+- Product JSON-LD on product pages
+- Organization JSON-LD on the homepage
+- `noindex` on cart and 404
 
 ## Deployment
 
-### GitHub Pages
-
-A workflow at `.github/workflows/deploy.yml` builds the site and publishes it on every push to `main`.
-
-1. Set `site` and `base` in `astro.config.mjs` to match your repository (see [Base path](#base-path)).
-2. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Push to `main` (or run the workflow manually from the **Actions** tab). Your site goes live at `https://<user>.github.io/<repo>/`.
-
-### Other static hosts
-
-`npm run build` emits a static `dist/` that deploys as-is to Cloudflare Pages, Vercel, Netlify, or any static host. Drop `base` from `astro.config.mjs` when serving from a domain root.
+The theme builds to static files in `dist/` and deploys to any static host. Set `SITE` to the production origin during deployment so SEO URLs are correct.
 
 ## License
 
-[MIT](./LICENSE)
+This project is licensed under the [MIT License](LICENSE).
+
+## Notes
+
+- Replace the demo product copy, prices, and images with your own catalogue before publishing.
+- The newsletter and checkout flows are design previews; connect them to your preferred backend or form provider if needed.

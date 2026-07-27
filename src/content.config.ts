@@ -1,35 +1,20 @@
-import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
-import { z } from 'astro/zod';
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 
-// Astro 7 Content Layer API: each collection declares a `loader`.
-// Authors add Markdown/MDX files under the `base` directories below.
-const works = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/works' }),
+const projects = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string(),
-      tech: z.array(z.string()),
-      link: z.string().url().optional(),
-      repo: z.string().url().optional(),
-      thumbnail: image().optional(),
-      order: z.number().optional(),
-      publishDate: z.coerce.date(),
+      category: z.string(),
+      technology: z.array(z.string()),
+      shortDescription: z.string(),
+      summary: z.string(),
+      focus: z.string(),
+      images: z.array(image()).min(1),
+      order: z.number().int().nonnegative().default(999),
     }),
 });
 
-const blog = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      publishDate: z.coerce.date(),
-      tags: z.array(z.string()).default([]),
-      description: z.string(),
-      draft: z.boolean().default(false),
-      heroImage: image().optional(),
-    }),
-});
-
-export const collections = { works, blog };
+export const collections = { projects };
